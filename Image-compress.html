@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolKit Pro - Online Image & PDF Tools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #60a5fa;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 6rem 0;
+        }
+
+        .tool-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .category-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: var(--accent-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .featured-tool-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 4rem 0;
+            }
+            
+            .tool-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">ToolKit Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-2" href="#">Start Free Trial</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">All-in-One Solution for Image & PDF Processing</h1>
+            <p class="lead mb-5">Convert, compress, edit, and enhance files instantly with our powerful online tools</p>
+            <div class="search-bar mx-auto mb-4">
+                <input type="text" class="form-control form-control-lg" placeholder="Search for tools...">
+            </div>
+            <div class="trust-badges">
+                <span class="badge bg-light text-dark me-2"><i class="fas fa-shield-alt me-2"></i>Secure Processing</span>
+                <span class="badge bg-light text-dark"><i class="fas fa-infinity me-2"></i>Unlimited Conversions</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Categories -->
+    <section class="py-5" id="tools">
+        <div class="container">
+            <h2 class="text-center mb-5">Popular Tool Categories</h2>
+            <div class="row g-4">
+                <!-- Image Tools Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tool-card card h-100 position-relative">
+                        <div class="category-badge">Image Tools</div>
+                        <div class="card-body">
+                            <i class="fas fa-image featured-tool-icon"></i>
+                            <h5 class="card-title">Image Processing</h5>
+                            <p class="card-text">Convert, compress, resize, and enhance images</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>Image Converter</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Photo Compressor</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Background Remover</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Tools Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="tool-card card h-100 position-relative">
+                        <div class="category-badge">PDF Tools</div>
+                        <div class="card-body">
+                            <i class="fas fa-file-pdf featured-tool-icon"></i>
+                            <h5 class="card-title">PDF Utilities</h5>
+                            <p class="card-text">Manipulate and optimize PDF documents</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success me-2"></i>PDF Compressor</li>
+                                <li><i class="fas fa-check text-success me-2"></i>PDF to Word</li>
+                                <li><i class="fas fa-check text-success me-2"></i>PDF Merger</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Categories... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Tools</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-file-export featured-tool-icon"></i>
+                            <h5>PDF to Word Converter</h5>
+                            <p>Convert PDF documents to editable Word files</p>
+                            <span class="badge bg-primary">Popular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 tool-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-compress featured-tool-icon"></i>
+                            <h5>Image Compressor</h5>
+                            <p>Reduce image size without quality loss</p>
+                            <span class="badge bg-success">New</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more featured tools -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ToolKit Pro</h5>
+                    <p>Your all-in-one solution for file conversions and optimizations</p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Tools</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Image Tools</a></li>
+                        <li><a href="#" class="text-white">PDF Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Newsletter</h6>
+                    <form class="mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary mt-2">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
